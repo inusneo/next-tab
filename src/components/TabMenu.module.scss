@@ -1,0 +1,41 @@
+.tabMenu {
+  max-width: 600px;
+}
+
+.tabList {
+  display: flex;
+  gap: 2px;
+}
+
+.tabButton {
+  padding: 15px 30px;
+  border: none;
+  background-color: #282f33;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+  font-size: 1rem;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #282f33;
+    background-color: #48d9f3;
+  }
+}
+
+.active {
+  color: #282f33;
+  background-color: #48d9f3;
+}
+
+.tabContent {
+  padding: 30px;
+  background-color: #282f33;
+  border-radius: 0 3px 3px 3px;
+  color: #bdd1d4;
+  font-size: 1rem;
+
+  p {
+    line-height: 1.4;
+  }
+}
