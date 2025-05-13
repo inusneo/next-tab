@@ -5,9 +5,9 @@
   "homepage": "https://inusneo.github.io/next-tab/",
   "scripts": {
     "dev": "next dev",
-    "build": "cross-env NODE_ENV=production next build",
-    "create-nojekyll": "tsc scripts/createNoJekyll.ts --outDir dist && node dist/createNoJekyll.js",
-    "deploy": "npm run build && npm run export && npm run create-nojekyll && gh-pages -d out",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "npm run build && npm run export && gh-pages -d out",
     "start": "next start",
     "lint": "next lint"
   },
