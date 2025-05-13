@@ -2,12 +2,11 @@
   "name": "my-tab-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://inusneo.github.io/next-tab/",
+  "homepage": "https://inusneo.github.io/next-tab",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && gh-pages -d out",
+    "deploy": "npm run build && gh-pages -d out",
     "start": "next start",
     "lint": "next lint"
   },

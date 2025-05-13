@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
 
-const repoName = 'https://inusneo.github.io/next-tab/';
+const repoName = 'next-tab';
 
 const nextConfig: NextConfig = {
   basePath: isProd ? `/${repoName}` : '',
@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
-  }
+  },
+  output: 'export',
 };
 
 export default nextConfig;
