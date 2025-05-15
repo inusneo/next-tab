@@ -10,8 +10,15 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
   output: 'export',
+  distDir: 'out',
 };
 
 export default nextConfig;
